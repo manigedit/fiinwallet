@@ -24,7 +24,7 @@
 <ion-content>
   <div (tabChanged)="onTabChanged($event)" [currentTab]="default" [ngSwitch]="default" [tabsList]="categories" class="swipe-area" swipe-segment>
     <ion-list *ngSwitchCase="'savings'" >
-      <ion-list *ngFor="let x of savingsAccounts">
+      <ion-list *ngFor="let x of savingsAccountsList" >
         <ion-card padding="5%" padding-left="10%">
           <ion-card-title>{{ x.accountNo }}</ion-card-title>
           {{x.savingsProductName}}
@@ -36,10 +36,10 @@
     </ion-list>
 
     <ion-list *ngSwitchCase="'loan'">
-      <ion-list *ngFor="let y of loanAccounts">
+      <ion-list *ngFor="let x of loanAccountsList">
         <ion-card padding="5%" padding-left="10%">
-          <ion-card-title>{{ y.accountNo }}</ion-card-title>
-          {{y.savingsProductName}}
+          <ion-card-title>{{ x.accountNo }}</ion-card-title>
+          {{ x.savingsProductName }}
         </ion-card>
       </ion-list>
     </ion-list>
