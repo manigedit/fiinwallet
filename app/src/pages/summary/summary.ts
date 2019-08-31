@@ -49,6 +49,6 @@ export class SummaryPage {
 
   openLoanApply(){
     console.log('Opening loan apply page');
-    alert('Sorry, You are not eligible currently');
+    this.navCtrl.push('apply-for-loan');
   }
 }

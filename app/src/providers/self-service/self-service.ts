@@ -15,6 +15,7 @@ export class SelfServiceProvider {
   _beneficiaries: any;
   _saCharges: any;
   _accountsList: any;
+  _accountDetails: any;
 
   constructor(public api: Api) { }
 
