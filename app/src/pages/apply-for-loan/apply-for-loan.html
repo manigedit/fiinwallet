@@ -1,0 +1,48 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>ApplyForLoan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <div class="example-container">
+      <ion-form-field>
+        <ion-select placeholder="Loan product options">
+          <ion-option *ngFor="let loan of loans" value="option">{{loan}}</ion-option>
+        </ion-select>
+      </ion-form-field>
+
+      <ion-form-field>
+        <ion-select placeholder="Purpose of Loan">
+          <ion-option *ngFor="let purpose of purposes" value="option">{{purpose}}</ion-option>
+        </ion-select>
+      </ion-form-field>
+      <ion-form-field>
+        <input ionInput placeholder="Principal" type="number" class="example-right-align">
+        <span ionPrefix>$&nbsp;</span>
+        <span ionSuffix>.00</span>
+      </ion-form-field>
+      <ion-form-field>
+        <input [(ngModel)]="currency" ionInput placeholder="Currency" class="example-right-align" disabled>
+      </ion-form-field>
+      <ion-form-field>
+        <input [(ngModel)]="date" ionInput placeholder="Submitted on" class="example-right-align" disabled>
+      </ion-form-field>
+      <ion-form-field>
+        <input [(ngModel)]="date" ionInput placeholder="Expected disbursement date" class="example-right-align" disabled>
+      </ion-form-field>
+      <div class="row">
+        <div class="col-md-6">
+          <button ion-raised-button color="warn">Cancel</button>
+        </div>
+        <div class="col-md-6">
+          <button ion-raised-button color="primary">Apply</button>
+        </div>
+      </div>
+
+
+    </div>
+  </-card>
+</ion-content>
