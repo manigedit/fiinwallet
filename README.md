@@ -6,7 +6,7 @@ The app currently runs on Ionic 3 framework using Typescript. The Ionic [Ionic F
     
     git clone https://github.com/openMF/fiinwallet
     
-    cd fiinwallet
+    cd fiinwallet/app
     
     npm install
     
