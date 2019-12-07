@@ -4,7 +4,7 @@ before_script:
  nvm install v12.7.0 ; cd app ; npm install -g ionic cordova ; npm install
  
 script:
- ionic cordova build browser — prod
+ ionic build --prod
 deploy:
  provider: pages
  skip-cleanup: true
