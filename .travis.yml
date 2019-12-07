@@ -1,7 +1,7 @@
 language: node_js
 
 before_script:
- nvm install v12.7.0 ; sudo npm install -g ionic cordova ; npm install
+ nvm install v12.7.0 ; cd app ; npm install -g ionic cordova ; npm install
  
 script:
  ionic serve
