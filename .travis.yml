@@ -1,7 +1,9 @@
 language: node_js
 
 before_script:
- npm install -g ionic cordova
+ nvm install v12.7.0
+ node --version
+ sudo npm install -g ionic cordova
  npm install
 script:
  ionic cordova build browser — prod
